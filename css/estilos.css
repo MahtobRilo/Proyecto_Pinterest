@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #424242;
+}
+
+nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: #424242;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 15px;
+}
+
+nav .icon{
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 10px;
+
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    margin: auto 0;
+}
+
+nav ul li{
+    margin: 0 2px;
+}
+
+nav ul li a{
+    padding: 5px 10px;
+}
+
+nav .search_box{
+    display: flex;
+    margin: auto 0;
+    height: 50px;
+    line-height: 50px;
+}
+
+
+nav .search_box input{
+    border: none;
+    outline: none;
+    background: #212121;
+    height: 100%;
+    padding: 0 10px;
+    font-size: 20px;
+    width: 400px;
+    border-radius: 25px;
+}
+
+nav .bar{
+    position: relative;
+    margin: auto;
+    display: none;
+}
+
+.container{
+    width: 100%;
+    margin: 0;
+    columns: 6;
+    column-gap: 0;
+}
+
+.container .card-image{
+    width: 100%;
+    margin: 0 0 10px;
+    padding: 5px;
+    overflow: hidden;
+    
+}
+
+.container .card-image img{
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+@media screen and (max-width:700px){
+    nav{
+        display: block;
+        padding: 0;
+    }
+
+    nav .icon{
+        display: inline-block;
+        padding: 15px 30px;
+    }
+
+    nav .search_box{
+        display: none;
+    }
+
+    nav ul{
+        display: none;   
+    }
+
+    .container{
+        columns: 2;
+        width: calc(100% - 40px);
+        box-sizing: border-box;
+        margin: 1.2em;
+    }
+}
